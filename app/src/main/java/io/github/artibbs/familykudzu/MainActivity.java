@@ -14,10 +14,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView profileName;
     private RecyclerView relationshipRecyclerView;
 
+    private FamilyManager familyManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        familyManager = new FamilyManager();
 
         profileImageView = findViewById(R.id.profileImageView);
         profileName = findViewById(R.id.profileName);
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         Drawable myIcon = getResources().getDrawable( R.drawable.default_profile_image );
         profileImageView.setImageDrawable(myIcon);
-        profileName.setText("something");
+
+        profileName.setText(familyManager.getMainUser().getFullName());
     }
 }
