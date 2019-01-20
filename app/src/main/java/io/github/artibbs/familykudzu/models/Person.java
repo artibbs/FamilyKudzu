@@ -1,4 +1,4 @@
-package io.github.artibbs.familykudzu;
+package io.github.artibbs.familykudzu.models;
 
 public class Person {
     private String firstName;

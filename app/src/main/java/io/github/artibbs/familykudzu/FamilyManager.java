@@ -3,6 +3,9 @@ package io.github.artibbs.familykudzu;
 import java.util.Arrays;
 import java.util.List;
 
+import io.github.artibbs.familykudzu.models.Person;
+import io.github.artibbs.familykudzu.models.Relationship;
+
 public class FamilyManager {
 
     private Person mainUser;
